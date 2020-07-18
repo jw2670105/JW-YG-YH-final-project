@@ -22,4 +22,4 @@ class Div : public Base {
 	 }
 };
 
-#endif //__MULT_HPP__
+#endif //__DIV_HPP__
