@@ -16,9 +16,6 @@ class Op : public Base {
         virtual double evaluate() { 
 		return num;
 	 }
-        virtual std::string stringify() { 
-		return std::to_string(num);
-	 }
 
 };
 
