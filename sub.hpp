@@ -17,9 +17,6 @@ class Sub : public Base {
         virtual double evaluate() { 
 		return x->evaluate() - y ->evaluate();
 	 }
-        virtual std::string stringify() { 
-		return x->stringify() + " - " + y->stringify();
-	 }
 };
 
 #endif //__SUB_HPP__
