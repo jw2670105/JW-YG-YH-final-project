@@ -1,5 +1,6 @@
 #ifndef CALCULATOR_HPP
 #define CALCULATOR_HPP
+#include "op.hpp"
 #include "add.hpp"
 #include "sub.hpp"
 #include "div.hpp"
@@ -20,8 +21,11 @@ public:
 		meter = height;
 	}
 	virtual double evaluate()
-	{
-		return Div(kg->evaluate(),Pow(meter->evaluate(), 2));
+	{	
+		Op* two = new Op(2);
+		Pow* result = new Pow(meter, two);
+		Div* result2 = new Div(kg,result);
+		return result2->evaluate();
 	}
 };
 #endif

@@ -1,5 +1,6 @@
 #ifndef CALCULATOR2_HPP
 #define CALCULATOR2_HPP
+#include "op.hpp"
 #include "add.hpp"
 #include "sub.hpp"
 #include "div.hpp"
@@ -20,8 +21,13 @@ public:
 		in = inch;
 	}
 	double evaluate()
-	{
-		return Div(Mult(703, lbs->evaluate()), Pow(in->evaluate(),2));
+	{	
+		Op* two = new Op(2);
+		Op* sot = new Op(703);
+		Mult* result = new Mult(sot, lbs);
+		Pow* result2 = new Pow(in,two);
+		Div* result3 = new Div(result, result2);
+		return result3->evaluate();
 	}
 };
 #endif
