@@ -18,9 +18,6 @@ class Pow : public Base {
         virtual double evaluate() { 
 		return std::pow(x->evaluate(), y ->evaluate());
 	 }
-        virtual std::string stringify() { 
-		return x->stringify() + " ** " + y->stringify();
-	 }
 };
 
 #endif //__POW_HPP__
