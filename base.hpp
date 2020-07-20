@@ -11,4 +11,4 @@ public:
     virtual double evaluate() = 0;
 };
 
-#endif 
+#endif //__BASE_HPP__
