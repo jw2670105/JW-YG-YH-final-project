@@ -1,6 +1,10 @@
 #ifndef CALCULATOR_HPP
 #define CALCULATOR_HPP
-#include "base.hpp"
+#include "add.hpp"
+#include "sub.hpp"
+#include "div.hpp"
+#include "mult.hpp"
+#include "pow.hpp"
 #include <cmath>
 using namespace std;
 
@@ -17,7 +21,7 @@ public:
 	}
 	virtual double evaluate()
 	{
-		return kg->evaluate()/pow(meter->evaluate(), 2);
+		return Div(kg->evaluate(),Pow(meter->evaluate(), 2));
 	}
 };
 #endif
