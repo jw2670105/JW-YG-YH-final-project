@@ -17,9 +17,7 @@ class Add : public Base {
         virtual double evaluate() { 
 		return x->evaluate() + y ->evaluate();
 	 }
-        virtual std::string stringify() { 
-		return x->stringify() + " + " + y->stringify();
-	 }
+
 };
 
 #endif //__ADD_HPP__
