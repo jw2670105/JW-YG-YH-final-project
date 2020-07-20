@@ -1,6 +1,10 @@
 #ifndef CALCULATOR2_HPP
 #define CALCULATOR2_HPP
-#include "base.hpp"
+#include "add.hpp"
+#include "sub.hpp"
+#include "div.hpp"
+#include "mult.hpp"
+#include "pow.hpp"
 #include <cmath>
 using namespace std;
 
@@ -17,7 +21,7 @@ public:
 	}
 	double evaluate()
 	{
-		return 703 * lbs->evaluate() / pow(in->evaluate(),2);
+		return Div(Mult(703, lbs->evaluate()), Pow(in->evaluate(),2));
 	}
 };
 #endif
