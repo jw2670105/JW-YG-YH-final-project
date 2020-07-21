@@ -10,7 +10,7 @@ class Factory {
 private:
 	vector<string> string_v;
 	vector<Base*> result;
-	Base* function_chice;
+	Base* function_choice;
 	Base* weight;
 	Base* height;
 public:
@@ -22,35 +22,14 @@ public:
 		}
 
 		vector<Base*> string_to_base(){
-			left = new Op(stoi(string_v.at(0)));
-			result.push_back(left);
-			for(int i = 1; i < string_v.size()-1; i++){
-				if((i + 1) % 2 == 0){
-					right = new Op(stoi(string_v.at(i + 1)));
-				}
-					left = result.back();
-					if(string_v.at(i) == "+"){
-						base = new Add(left, right);
-						result.push_back(base);
-					} else if (string_v.at(i) == "-"){
-						base = new Sub(left, right);
-						result.push_back(base);
-					} else if (string_v.at(i) == "*"){
-						base = new Mult(left, right);
-						result.push_back(base);
-					} else if (string_v.at(i) == "/"){
-						base = new Div(left, right);
-						result.push_back(base);
-					} else if (string_v.at(i) == "**"){
-						base = new Pow(left, right);
-						result.push_back(base);
-					}
-				}
-			
+			function_choice = new Op(stoi(string_v.at(0)));
+			result.push_back(function_choice);
+			weight = new Op(stoi(string_v.at(1)));
+			result.push_back(weight);
+			height = new Op(stoi(string_v.at(2)));
+			result.push_back(height);			
 			return result;
-
 		}
-
 };
 
 #endif
