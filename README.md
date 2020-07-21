@@ -8,7 +8,7 @@ We are planning use C++ for our project.<br />
 The input of our program is the gender, height and weight for a person, and it will output the BMI for this person.<br />
 
 
-#Factory pattern by Yihua Hao<br />
+# Factory pattern by Yihua Hao<br />  
 First I creat the factory.hpp file, factory class can make strings to base type. <br />
 Then I use CMmakeLish to create a main executable and a test executable. <br />
 My main executable named BMI and take the char*\* argv and the int argc input to main and pass it to the factory. <br />
