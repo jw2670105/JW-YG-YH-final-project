@@ -8,16 +8,19 @@ We are planning use C++ for our project.<br />
 The input of our program is the gender, height and weight for a person, and it will output the BMI for this person.<br />
 
 
-##Factory pattern by Yihua Hao
-First I creat the factory.hpp file, factory class can make strings to base type. 
-Then I use CMmakeLish to create a main executable and a test executable. 
-My main executable named BMI and take the char*\* argv and the int argc input to main and pass it to the factory. 
-So we can run the executable like `./BMI 1 70 1.8` 
-We use the first number to choice the function of BMI.
-1 = weight(kg)/(height(m))^2
-2 = weight(lb) * 703 /(height(in)^2)
-the second number is weight.
-the third number is height.
+# Factory pattern by Yihua Hao<br />  
+First I creat the factory.hpp file, factory class can make strings to base type. <br />
+Then I use CMmakeLish to create a main executable and a test executable. <br />
+My main executable named BMI and take the char*\* argv and the int argc input to main and pass it to the factory. <br />
+So we can run the executable like `./BMI 1 70 1.8` <br />
+We use the first number to choice the function of BMI.<br />
+1 = weight(kg)/(height(m))^2<br />
+2 = weight(lb) * 703 /(height(in)^2)<br />
+the second number is weight.<br />
+the third number is height.<br />
+
+
+
 
 
 
