@@ -14,7 +14,7 @@ int main(int argc, char** argv)
 	Factory fact(input);
 	vector<Base*> base_v;
     	base_v = fact.string_to_base();
-    	Calculator result(base_v);
+    	Calculator* result = new Calculator(base_v);
 	Result final_result(result);
 	final_result.BMI_RESULT();    	
 

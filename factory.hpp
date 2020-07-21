@@ -2,6 +2,7 @@
 #define __FACTORY_HPP__
 
 #include "base.hpp"
+#include "op.hpp"
 #include <vector>
 #include <string>
 using namespace std;

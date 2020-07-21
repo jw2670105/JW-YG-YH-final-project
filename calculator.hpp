@@ -1,5 +1,9 @@
 #ifndef CALCULATOR_HPP
 #define CALCULATOR_HPP
+
+#include <vector>
+#include <string>
+#include "factory.hpp"
 #include "op.hpp"
 #include "add.hpp"
 #include "sub.hpp"
@@ -12,18 +16,20 @@ using namespace std;
 class Calculator : public Base
 {
 private:
-	Base* function_choice
+	Base* function_choice;
 	Base* weight;
 	Base* height;
 	
 public:
-	Calculator(vector<Base*> input) :Base()
+	Calculator(){};	
+
+	Calculator(vector<Base*> input):Base() 
 	{
 		function_choice = input.at(0);
 		weight = input.at(1);
 		height = input.at(2);
 	}
-	virtual double evaluate()
+	double evaluate()
 	{	
 		if(function_choice->evaluate() == 1){
 			Op* two = new Op(2);
