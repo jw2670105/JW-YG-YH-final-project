@@ -25,9 +25,9 @@ public:
 		vector<Base*> string_to_base(){
 			function_choice = new Op(stoi(string_v.at(0)));
 			result.push_back(function_choice);
-			weight = new Op(stoi(string_v.at(1)));
+			weight = new Op(stod(string_v.at(1)));
 			result.push_back(weight);
-			height = new Op(stoi(string_v.at(2)));
+			height = new Op(stod(string_v.at(2)));
 			result.push_back(height);			
 			return result;
 		}
