@@ -23,12 +23,14 @@ public:
 	}
 	void BMI_RESULT()
 	{
+		cout << "Your BMI is: " << decorator->evaluate() <<endl;
 		if (decorator->evaluate() <= 18.5)
 		{
 			cout << "You are under weight" << endl;
 		}
 		else if (decorator->evaluate() > 18.5 && decorator->evaluate() <= 24.9)
 		{
+			
 			cout << "You are helathy" << endl;
 		}
 		else if (decorator->evaluate() > 24.9 && decorator->evaluate() <= 29.9)
