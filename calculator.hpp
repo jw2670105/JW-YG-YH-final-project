@@ -15,12 +15,12 @@ using namespace std;
 
 class Calculator : public Base
 {
-private:
+public:
 	Base* function_choice;
 	Base* weight;
 	Base* height;
 	
-public:
+
 	Calculator(){};	
 
 	Calculator(vector<Base*> input):Base() 
@@ -29,21 +29,56 @@ public:
 		weight = input.at(1);
 		height = input.at(2);
 	}
-	double evaluate()
-	{	
-		if(function_choice->evaluate() == 1){
-			Op* two = new Op(2);
-			Pow* result = new Pow(height, two);
-			Div* result2 = new Div(weight,result);
-			return result2->evaluate();
-		}else if (function_choice->evaluate() == 2){
-			Op* two = new Op(2);
-			Op* sot = new Op(703);
-			Mult* result = new Mult(sot, weight);
-			Pow* result2 = new Pow(height,two);
-			Div* result3 = new Div(result, result2);
-			return result3->evaluate();		
-		}
-	}
+        virtual double evaluate(){};
+	Calculator* create();
 };
+
+class Metric_calculator : public Calculator{
+public:
+        Metric_calculator(){};
+        Metric_calculator(Base* num1, Base* num2) : Calculator(){
+                weight = num1;
+                height = num2;
+        }
+        virtual double evaluate()
+        {
+                        Op* two = new Op(2);
+                        Pow* result = new Pow(height, two);
+                        Div* result2 = new Div(weight,result);
+                        return result2->evaluate();
+        }
+
+};
+
+class Standard_calculator : public Calculator{
+public:
+        Standard_calculator(){};
+        Standard_calculator(Base* num1, Base* num2):Calculator(){
+                weight = num1;
+                height = num2;
+        }
+
+        virtual double evaluate(){
+                Op* two = new Op(2);
+                Op* sot = new Op(703);
+                Mult* result = new Mult(sot, weight);
+                Pow* result2 = new Pow(height,two);
+                Div* result3 = new Div(result, result2);
+                return result3->evaluate();
+        }
+};
+
+Calculator* Calculator::create(){
+                if(function_choice->evaluate() == 1){
+                        Calculator* new_cal =  new Metric_calculator(weight, height);
+                        return new_cal;
+                }else if(function_choice->evaluate() == 2){
+                        return new Standard_calculator(weight, height);
+                }else{
+                        return nullptr;
+                }
+
+        }
+
+
 #endif
