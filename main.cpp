@@ -14,7 +14,8 @@ int main(int argc, char** argv)
 	vector<Base*> base_v;
     	base_v = fact.string_to_base();
     	Calculator* result = new Calculator(base_v);
-	Result final_result(result);
+	Calculator* result2 = result->create();
+	Result final_result(result2);
 	final_result.BMI_RESULT();    	
 
 

@@ -24,8 +24,8 @@ TEST(Factory_test, Metric_Test1)
 
     vector<Base*> test_result = factory->string_to_base();
     Calculator* result = new Calculator(test_result);
-    
-    EXPECT_NEAR(result->evaluate(), 21.6049, 0.01);   
+    Calculator* final_result = result->create();    
+    EXPECT_NEAR(final_result->evaluate(), 21.6049, 0.01);   
 }
 TEST(Factory_test, Metric_Test2)
 {
@@ -41,8 +41,8 @@ TEST(Factory_test, Metric_Test2)
 
     vector<Base*> test_result = factory->string_to_base();
     Calculator* result = new Calculator(test_result);
-
-    EXPECT_NEAR(result->evaluate(), 31.25, 0.01);
+	   Calculator* final_result = result->create();
+    EXPECT_NEAR(final_result->evaluate(), 31.25, 0.01);
 }
 
 TEST(Factory_test, Standard_Test1)
@@ -59,7 +59,8 @@ TEST(Factory_test, Standard_Test1)
 
     vector<Base*> test_result = factory->string_to_base();
     Calculator* result = new Calculator(test_result);
-    EXPECT_NEAR(result->evaluate(), 19.5239, 0.01);
+       Calculator* final_result = result->create(); 
+   EXPECT_NEAR(final_result->evaluate(), 19.5239, 0.01);
 }
 
 TEST(Factory_test, Standard_Test2)
@@ -76,6 +77,7 @@ TEST(Factory_test, Standard_Test2)
 
     vector<Base*> test_result = factory->string_to_base();
     Calculator* result = new Calculator(test_result);
-    EXPECT_NEAR(result->evaluate(), 31.2444, 0.01);
+   Calculator* final_result = result->create(); 
+   EXPECT_NEAR(final_result->evaluate(), 31.2444, 0.01);
 }
 #endif //__OP_TEST_HPP__
