@@ -7,6 +7,7 @@ The reason why it is important and we are interesting is we are interested about
 We are planning use C++ for our project.<br />
 The input of our program is the gender, height and weight for a person, and it will output the BMI for this person.<br />
 
+
 ##Factory pattern by Yihua Hao
 First I creat the factory.hpp file, factory class can make strings to base type. 
 Then I use CMmakeLish to create a main executable and a test executable. 
@@ -17,5 +18,6 @@ We use the first number to choice the function of BMI.
 2 = weight(lb) * 703 /(height(in)^2)
 the second number is weight.
 the third number is height.
+
 
 
