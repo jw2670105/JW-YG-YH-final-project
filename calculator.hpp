@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 #include "factory.hpp"
-#include "op.hpp"
+#include "num.hpp"
 #include "add.hpp"
 #include "sub.hpp"
 #include "div.hpp"
@@ -42,7 +42,7 @@ public:
         }
         virtual double evaluate()
         {
-                        Op* two = new Op(2);
+                        Num* two = new Num(2);
                         Pow* result = new Pow(height, two);
                         Div* result2 = new Div(weight,result);
                         return result2->evaluate();
@@ -59,8 +59,8 @@ public:
         }
 
         virtual double evaluate(){
-                Op* two = new Op(2);
-                Op* sot = new Op(703);
+                Num* two = new Num(2);
+                Num* sot = new Num(703);
                 Mult* result = new Mult(sot, weight);
                 Pow* result2 = new Pow(height,two);
                 Div* result3 = new Div(result, result2);
