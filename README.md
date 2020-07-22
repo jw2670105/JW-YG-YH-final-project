@@ -7,8 +7,8 @@ The reason why it is important and we are interesting is we are interested about
 We are planning use C++ for our project.<br />
 The input of our program is the height and weight for a person, and it will output the BMI for this person.<br />
 All we need to do is run the program by using the command line ./BMI and the follwing input is the option of two systems(1 for standard system and 2 for metric system) and then you can input your weight and you height.<br />
-Sample command line ./BMI 1 60 1.75 which is weight in 60kilogram and height in 1.75meter<br />
-Sample command line ./BMI 2 180 70 which is weight in 180lbs and height in 70inches<br />
+Sample command line `./BMI 1 60 1.75` which is weight in 60kilogram and height in 1.75meter<br />
+Sample command line `./BMI 2 180 70` which is weight in 180lbs and height in 70inches<br />
 Please check out the sample input/output screenshot in the files for more details <br />
 
 # Factory pattern by Yihua Hao<br />  
