@@ -3,7 +3,7 @@
 
 #include <string>
 #include "gtest/gtest.h"
-#include "op.hpp"
+#include "num.hpp"
 #include "mult.hpp"
 #include "div.hpp"
 #include "pow.hpp"
