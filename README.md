@@ -19,6 +19,12 @@ We use the first number to choice the function of BMI.<br />
 the second number is weight.<br />
 the third number is height.<br />
 
+# Composite pattern by Junlong Wu<br /> 
+I created the hpp file for add, subtract, divide, multiple, and power, so we can directly access them in main.</br>
+My partners can also use them for their design partterns.</br>
+Then I created the unit tests to test if it is works fine.</br>
+Finally I merge it with my partners' work together.
+
 
 
 
