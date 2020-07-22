@@ -9,64 +9,35 @@
 #include "pow.hpp"
 #include "factory.hpp"
 #include "calculator.hpp"
-TEST(AddTest, intTest) {
+TEST(CompTest, AddTest) {
     Num* test1 = new Num(3);
     Num* test2 = new Num(8);
     Add* test = new Add(test1, test2);
     EXPECT_EQ(test->evaluate(), 11);
 }
-TEST(AddTest, decTest) {
-    Num* test1 = new Num(3.5);
-    Num* test2 = new Num(8);
-    Add* test = new Add(test1, test2);
-    EXPECT_EQ(test->evaluate(), 11.5);
-}
-TEST(SubTest, intTest) {
+TEST(CompTest,SubTest) {
     Num* test1 = new Num(6);
     Num* test2 = new Num(2);
     Sub* test = new Sub(test1, test2);
     EXPECT_EQ(test->evaluate(), 4);
 }
-TEST(SubTest, decTest) {
-    Num* test1 = new Num(6);
-    Num* test2 = new Num(2.2);
-    Sub* test = new Sub(test1, test2);
-    EXPECT_EQ(test->evaluate(), 3.8);
-}
-TEST(MultTest, intTest) {
+TEST(CompTest,MultTest) {
     Num* test1 = new Num(2);
     Num* test2 = new Num(7);
     Mult* test = new Mult(test1, test2);
     EXPECT_EQ(test->evaluate(), 14);
 }
-TEST(MultTest, decTest) {
-    Num* test1 = new Num(2);
-    Num* test2 = new Num(7.2);
-    Mult* test = new Mult(test1, test2);
-    EXPECT_EQ(test->evaluate(), 14.4);
-}
-TEST(DivTest, intTest) {
+TEST(CompTest, DivTest) {
     Num* test1 = new Num(9);
     Num* test2 = new Num(3);
     Div* test = new Div(test1, test2);
     EXPECT_EQ(test->evaluate(), 3);
 }
-TEST(DivTest, decTest) {
-    Num* test1 = new Num(9);
-    Num* test2 = new Num(3.3);
-    Div* test = new Div(test1, test2);
-    EXPECT_EQ(test->evaluate(), 2.72);
-}
-TEST(PowTest, intTest) {
+TEST(CompTest,PowTest) {
     Num* test1 = new Num(3);
     Num* test2 = new Num(2);
     Pow* test = new Pow(test1, test2);
     EXPECT_EQ(test->evaluate(), 9);
-}TEST(PowTest, decTest) {
-    Num* test1 = new Num(1.1);
-    Num* test2 = new Num(2);
-    Pow* test = new Pow(test1, test2);
-    EXPECT_EQ(test->evaluate(), 1.21);
 }
 TEST(Factory_test, Metric_Test1)
 {
