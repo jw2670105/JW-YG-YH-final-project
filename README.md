@@ -29,7 +29,7 @@ Finally I merge it with my partners' work together.
 I created the base.hpp at frist which contain a vistual function in it
 and then I created a decoratot.hpp and its base.hpp 's sub class.<br /> 
 After that I created calculator.hpp which calculates the BMI and result.hpp which is a sub class of decorator.hpp.<br /> 
-Also the resutl.hpp which outputs you BMI index and the reult of your health.
+Also the resutl.hpp which outputs you BMI index and the reult of your health.br /> 
 
 
 
