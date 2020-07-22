@@ -2,7 +2,7 @@
 #define __FACTORY_HPP__
 
 #include "base.hpp"
-#include "op.hpp"
+#include "num.hpp"
 #include <vector>
 #include <string>
 using namespace std;
@@ -23,11 +23,11 @@ public:
 		}
 
 		vector<Base*> string_to_base(){
-			function_choice = new Op(stoi(string_v.at(0)));
+			function_choice = new Num(stoi(string_v.at(0)));
 			result.push_back(function_choice);
-			weight = new Op(stod(string_v.at(1)));
+			weight = new Num(stod(string_v.at(1)));
 			result.push_back(weight);
-			height = new Op(stod(string_v.at(2)));
+			height = new Num(stod(string_v.at(2)));
 			result.push_back(height);			
 			return result;
 		}
