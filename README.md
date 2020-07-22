@@ -5,7 +5,7 @@ Title: BMI calculator<br />
 We are going to make an app that can calcuate the BMI（a value derived from the mass and height of a person）of a person. <br />
 The reason why it is important and we are interesting is we are interested about what a healthy body should look like. We want to know how to calculate the BMI for a person, and the range of BMI for a healthy person.<br />
 We are planning use C++ for our project.<br />
-The input of our program is the gender, height and weight for a person, and it will output the BMI for this person.<br />
+The input of our program is the height and weight for a person, and it will output the BMI for this person.<br />
 
 
 # Factory pattern by Yihua Hao<br />  
@@ -25,7 +25,11 @@ My partners can also use them for their design partterns.</br>
 Then I created the unit tests to test if it is works fine.</br>
 Finally I merge it with my partners' work together.
 
-
+# Decorator pattern by Yanjun Guan<br /> 
+I created the base.hpp at frist which contain a vistual function in it
+and then I created a decoratot.hpp and its base.hpp 's sub class.
+After that I created calculator.hpp which calculates the BMI and result.hpp which is a sub class of decorator.hpp.
+Also the resutl.hpp which outputs you BMI index and the reult of your health.
 
 
 
