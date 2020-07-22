@@ -8,8 +8,8 @@ We are planning use C++ for our project.<br />
 The input of our program is the height and weight for a person, and it will output the BMI for this person.<br />
 All we need to do is run the program by using the command line ./BMI and the follwing input is the option of two systems(1 for standard system and 2 for metric system) and then you can input your weight and you height.<br />
 Sample command line ./BMI 1 60 1.75 which is weight in 60kilogram and height in 1.75meter<br />
-                    ./BMI 2 180 70 which is weight in 180lbs and height in 70inches<br />
-
+Sample command line ./BMI 2 180 70 which is weight in 180lbs and height in 70inches<br />
+Please check out the sample input/output screenshot in the files for more details <br />
 
 # Factory pattern by Yihua Hao<br />  
 First I creat the factory.hpp file, factory class can make strings to base type. <br />
@@ -31,8 +31,9 @@ Finally I merge it with my partners' work together.
 # Decorator pattern by Yanjun Guan<br /> 
 I created the base.hpp at frist which contain a vistual function in it
 and then I created a decoratot.hpp and its base.hpp 's sub class.<br /> 
-After that I created calculator.hpp which calculates the BMI and result.hpp which is a sub class of decorator.hpp.<br /> 
-Also the resutl.hpp which outputs you BMI index and the reult of your health.br /> 
+After that I created calculator.hpp which calculates the BMI <br />
+and also result.hpp is the sub class of decorator.hpp.<br /> 
+Also the resutl.hpp will output your BMI index and the reult of your health.<br /> 
 
 
 
