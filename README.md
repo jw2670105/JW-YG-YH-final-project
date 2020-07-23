@@ -43,6 +43,8 @@ and then I created a decoratot.hpp and its base.hpp 's sub class.<br />
 After that I created calculator.hpp which calculates the BMI <br />
 and also result.hpp is the sub class of decorator.hpp.<br /> 
 Also the resutl.hpp will output your BMI index and the reult of your health.<br /> 
+<img src="https://github.com/jw2670105/JW-YG-YH-final-project/blob/master/decorator-pattern-digram.png" alt="Editor" width="500">
+</div>
 
 # Test
 ![image](https://github.com/jw2670105/JW-YG-YH-final-project/blob/master/Screen%20Shot%202020-07-23%20at%2001.13.01.png)
