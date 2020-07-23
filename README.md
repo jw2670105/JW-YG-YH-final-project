@@ -22,6 +22,7 @@ We use the first number to choice the function of BMI.<br />
 the second number is weight.<br />
 the third number is height.<br />
 
+
 # Composite pattern by Junlong Wu<br /> 
 I created the hpp file for add, subtract, divide, multiple, and power, so we can directly access them in main.</br>
 My partners can also use them for their design partterns.</br>
@@ -35,7 +36,10 @@ After that I created calculator.hpp which calculates the BMI <br />
 and also result.hpp is the sub class of decorator.hpp.<br /> 
 Also the resutl.hpp will output your BMI index and the reult of your health.<br /> 
 
+# Test
+![image](https://github.com/jw2670105/JW-YG-YH-final-project/blob/master/Screen%20Shot%202020-07-23%20at%2001.13.01.png)
 
+# Sample input and output
 
-
-
+![image](https://github.com/jw2670105/JW-YG-YH-final-project/blob/master/sample%20input%20output.png)
+![image](https://github.com/jw2670105/JW-YG-YH-final-project/blob/master/Screen%20Shot%202020-07-23%20at%2001.14.51.png)
