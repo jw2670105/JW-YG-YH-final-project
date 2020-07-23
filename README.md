@@ -33,6 +33,9 @@ I created the hpp file for add, subtract, divide, multiple, and power, so we can
 My partners can also use them for their design partterns.</br>
 Then I created the unit tests to test if it is works fine.</br>
 Finally I merge it with my partners' work together.
+<div align="center">
+	<img src="https://github.com/jw2670105/JW-YG-YH-final-project/blob/master/comp_diagram.jpg" alt="Editor" width="500">
+</div>
 
 # Decorator pattern by Yanjun Guan<br /> 
 I created the base.hpp at frist which contain a vistual function in it
