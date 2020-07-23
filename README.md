@@ -24,7 +24,9 @@ the third number is height.<br />
 I rewrite the calculator class. <br />
 I write Metric Calculator and Standard Calculator class as subclasses of calculator class.<br />
 I also write a create function of Calculator class, if function choice is 1, then we return a Metric_calculator class pointer, if function choice is 2, we return the Standard_calculator pointer, otherwise return nullptr.<br /> 
-![image](https://github.com/jw2670105/JW-YG-YH-final-project/blob/master/2-4.jpg)
+<div align="center">
+	<img src="https://github.com/jw2670105/JW-YG-YH-final-project/blob/master/2-4.jpg" alt="Editor" width="500">
+</div>
 
 # Composite pattern by Junlong Wu<br /> 
 I created the hpp file for add, subtract, divide, multiple, and power, so we can directly access them in main.</br>
