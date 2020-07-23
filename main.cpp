@@ -21,7 +21,7 @@ int main(int argc, char** argv)
 		cin >> height;
 		Num* value1 = new Num(weight);
 		Num* value2 = new Num(height);
-		Calculator* BMI_TEST = new Calculator(value1, value2);
+		Metric_Calculator* BMI_TEST = new Calculator(value1, value2);
 		Result* result1 = new Result(BMI_TEST);
 		result1->BMI_RESULT();
 	}
@@ -33,7 +33,7 @@ int main(int argc, char** argv)
 		cin >> height;
 		Num* v1 = new Num(weight);
 		Num* v2 = new Num(height);
-		Calculator2* BMI_TEST2 = new Calculator2(v1, v2);
+		Standerd_Calculator2* BMI_TEST2 = new Calculator2(v1, v2);
 		Result* result2 = new Result(BMI_TEST2);
 		result2->BMI_RESULT();
 	}
