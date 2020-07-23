@@ -44,7 +44,7 @@ int main(int argc, char** argv)
 
 
 
-	
+	/*
 
 	vector<string> input;
 	for(int i = 1; i < argc; i++){
@@ -60,7 +60,7 @@ int main(int argc, char** argv)
 
 
 	return 0;
-
+*/
 }
 
 
