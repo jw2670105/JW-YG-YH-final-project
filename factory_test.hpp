@@ -9,6 +9,61 @@
 #include "pow.hpp"
 #include "factory.hpp"
 #include "calculator.hpp"
+#include "result.hpp"
+#include "decorator.hpp"
+
+TEST(Decorator_test, Result_test1)
+{
+    string test_val;
+    vector<string>test_vector;
+    test_val = "1";
+    test_vector.push_back(test_val);
+    test_val = "60";//weight
+    test_vector.push_back(test_val);
+    test_val = "1.75";//height
+    test_vector.push_back(test_val);
+    Factory* factory = new Factory(test_vector);
+    vector<Base*> test_result = factory->string_to_base();
+    Calculator* result = new Calculator(test_result);
+    Calculator* final_result = result->create();
+    Result* decorator = new Result(final_result); 
+    EXPECT_NEAR(decorator->evaluate(), 19.5918,0.01);
+}
+
+TEST(Decorator_test, Result_test2)
+{
+    string test_val;
+    vector<string>test_vector;
+    test_val = "2";
+    test_vector.push_back(test_val);
+    test_val = "180";//weight
+    test_vector.push_back(test_val);
+    test_val = "60";//height
+    test_vector.push_back(test_val);
+    Factory* factory = new Factory(test_vector);
+    vector<Base*> test_result = factory->string_to_base();
+    Calculator* result = new Calculator(test_result);
+    Calculator* final_result = result->create();
+    Result* decorator = new Result(final_result); 
+    EXPECT_NEAR(decorator->evaluate(), 35.15, 0.01);
+}
+TEST(Decorator_test, Result_test3)
+{
+    string test_val;
+    vector<string>test_vector;
+    test_val = "2";
+    test_vector.push_back(test_val);
+    test_val = "200";//weight
+    test_vector.push_back(test_val);
+    test_val = "70";//height
+    test_vector.push_back(test_val);
+    Factory* factory = new Factory(test_vector);
+    vector<Base*> test_result = factory->string_to_base();
+    Calculator* result = new Calculator(test_result);
+    Calculator* final_result = result->create();
+    Result* decorator = new Result(final_result); 
+    EXPECT_NEAR(decorator->evaluate(), 28.6939, 0.01);
+}
 TEST(CompTest, AddTest) {
     Num* test1 = new Num(3);
     Num* test2 = new Num(8);
